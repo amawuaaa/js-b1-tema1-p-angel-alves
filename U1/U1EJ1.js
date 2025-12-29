@@ -67,6 +67,9 @@ let planets = [
         }
     ]
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+const result = planets.map(planet => {
+  return [planet.name, planet.diameter];
+});
 
 
 
@@ -77,5 +80,6 @@ let planets = [
  * please comment or remove the following lines
  */
 export function tests() {
-    return result;
+
+  return result;
 }
