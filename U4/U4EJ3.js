@@ -54,6 +54,18 @@ console.log(oldest(classroomStudents[0], classroomStudents[3])); //This will ret
 console.log(oldest(classroomStudents[2], classroomStudents[3], classroomStudents[4])); //This will return 'Ramon'
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+export function oldest(...students) {
+  let oldestStudent = students[0];
+
+  for (let i = 1; i < students.length; i++) {
+    if (students[i].age >= oldestStudent.age) {
+      oldestStudent = students[i];
+    }
+  }
+
+  return oldestStudent.name;
+}
+
 
 
 
