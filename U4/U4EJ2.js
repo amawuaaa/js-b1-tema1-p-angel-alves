@@ -31,6 +31,20 @@
 console.log(evenNumbers(4,7,21,3)); //This will return [4,6,20,2]
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+export function evenNumbers(...numbers) {
+  // Clonamos el array de entrada
+  const clonedNumbers = [...numbers];
+
+  // Calculamos los restos de dividir entre 2
+  const remainders = clonedNumbers.map(num => num % 2);
+
+  // Restamos cada número con su resto
+  const result = clonedNumbers.map((num, index) => {
+    return num - remainders[index];
+  });
+
+  return result;
+}
 
 
 
