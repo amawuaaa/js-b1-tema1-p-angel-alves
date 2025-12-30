@@ -1,12 +1,12 @@
 //T1: Casos específicos de funciones / Casos específics de funcions
 //U2: Recursividad / Recursivitat
 /** 
-	-- CASTELLANO --
+	 CASTELLANO --
 	EJERCICIO 1.2.2 ENUNCIADO:
 	Define el cuerpo de una función denominada rangeOfNumbers (ya dada) que reciba un número como parámetro y devuelva la suma de todos 
 	los números que hay desde 0 hasta el número recibido. Es decir, el resultado de la llamada a la función 
 	rangeOfNumbers(4) debería ser 1+2+3+4 = 10
-	
+	--
 	-- CATALÀ --
 	EXERCICI 1.2.2 ENUNCIAT:
 	Defineix el cos d'una funció anomenada rangeOfNumbers (ja donada) que rebi un número com a paràmetre i torni la suma de tots
@@ -15,7 +15,13 @@
 */
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+export function rangeOfNumbers(n){
+	if ( n === 0 ){
+		return 0;
+	}
 
+	return n + rangeOfNumbers(n-1);
+}
 
 
 
