@@ -66,7 +66,9 @@ let planets = [
         }
     ]
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+export const planetHasRings = planets => planets.hasRings === true;
 
+export const result = planets.filter(planetHasRings);
 
 
 
