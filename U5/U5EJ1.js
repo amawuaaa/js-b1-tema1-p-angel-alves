@@ -60,7 +60,15 @@ const classroomStudents = [
 ];
  
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+export const letterGrade = grade =>
+  grade >= 9 ? 'A' :
+  grade >= 7 ? 'B' :
+  grade >= 5 ? 'C' :
+               'D';
 
+export const result = classroomStudents.map(student =>
+  letterGrade(student.averageGrade)
+);
 
 
 
